@@ -1,14 +1,26 @@
-// JavaScript source code
-//////////////////////////////toggle menu////////////////////////////////////
-
-///1
 
 let dash = document.getElementById("dash-toggle");
 
-document.getElementById("menu").addEventListener('mouseover', function () {
+document.getElementById("menu").addEventListener('click', function () {
 
-    dash.style.display = "block";
+    if (dash.style.display == "none") {
+
+        menuBlck();
+    }
+    else {
+        menuNone();
+    }
+
+
 })
+
+function menuBlck() {
+    dash.style.display = "block";
+}
+
+function menuNone() {
+    dash.style.display = "none";
+}
 
 //2
 
@@ -18,11 +30,6 @@ document.getElementById("menu").addEventListener('mouseover', function () {
 }) */
 
 document.getElementById("im-icon").addEventListener('mouseout', function () {
-
-    dash.style.display = "none";
-})
-
-document.getElementById("menu").addEventListener('click', function () {
 
     dash.style.display = "none";
 })
