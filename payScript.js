@@ -7,7 +7,11 @@
 
 let dash = document.getElementById("dash-toggle");
 
-document.getElementById("menu").addEventListener('mouseover', function () {
+/*document.getElementById("menu").addEventListener('mouseover', function () {
+
+    dash.style.display = "block";
+})*/
+document.getElementById("menu").addEventListener('click', function () {
 
     dash.style.display = "block";
 })
